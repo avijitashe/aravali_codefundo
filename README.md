@@ -19,6 +19,8 @@ The real-time measurements from satellite, sensors and gauges always offer great
 
 Finally, using feedback from the community via helpline/SMS in real-time can be used as surrogate sensors to gather additional data. For ex: Pings on rising water levels in streets or mud flow 
 
+The front-end is a web application, while back-end does computing. The end-user interacts offline.
+
 ## How does it work?
 1. Avaiable datasets from IMD is collected
 2. newsapi API collects cyclone related figures like casualties, inches of rain, days of rain, people evacuated, shelters, expenses etc.
@@ -43,5 +45,6 @@ Note: API policies are subject to change
 
 Future Works: 
 1. Learn trajectory of cyclones and floods from historical data. 
-2. Better NLP for IVRS alerts and assistance. 
+2. Emergency calls without network authentication (SIM) coverage 
+3. Better NLP for IVRS alerts and assistance. 
 
