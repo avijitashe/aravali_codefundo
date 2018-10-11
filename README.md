@@ -31,7 +31,7 @@ The front-end is a web application, while back-end does computing. The end-user 
 6. If classified emergency, alerts are send via SMS to selected phone numbers, 
 7. On-demand SMS and IVR is enabled
 
-![Architecture] (https://github.com/avijitashe/aravali_codefundo/blob/master/Architecture%202018-10-11.jpg)
+![Architecture](https://github.com/avijitashe/aravali_codefundo/blob/master/Architecture%202018-10-11.jpg)
 
 ## What technologies are you using?
 We make use of Azure Functions for serverless architecture, Azure Storage solutions, newsapi's API for datamining, tweepy API for updates, way2sms API for SMS services, translator and transliteration API for alerts, analysis, and DSVM for machine learning.  C#, Python and R. 
