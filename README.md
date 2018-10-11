@@ -4,8 +4,8 @@ ARAVALI makes predictions better and alerts more relevant. An Open Source System
 ARAVALI is based on (A)gg(R)egated (A)rri(V)al of (L)atent (I)nformation to:
 1. Improve predictions (in time and accuracy) by combining predictions from curated data (offline) and aggregated real-time public social media and sensor systems from IMD, CWC etc. 
 2. Monitor keywords from social media posts – update database (online)
-3. Disseminate relevant alerts via SMS in regional languages to concerned demographics/territories
-4. On-demand SMS updates and Phone IVR (NLP) assistance
+3. Disseminate relevant alerts via SMS (on-demand/IVR) in regional languages to concerned demographics
+
 
 Synopsis :
 
@@ -23,14 +23,15 @@ Finally, using feedback from the community via helpline/SMS in real-time can be 
 The front-end is a web application, while back-end does computing. The end-user interacts offline.
 
 ## How does it work?
-1. Avaiable datasets from IMD is collected
-2. newsapi API collects cyclone related figures like casualties, inches of rain, days of rain, people evacuated, shelters, expenses etc.
-3. Data is analysed, cleaned and fused
-4. Posts, tweets, news are monitored online, databse is updated
+1. Avaiable datasets from IMD is stored
+2. Newsapi API collects data like casualties, inches of rain, days of rain, people evacuated, shelters, expenses etc.
+3. Database is periodically fused, updated
+4. Tweets, feedbacks are monitored 
 5. Messages are composed with updates, forecast, damage etc
-6. During an alert, alerts are send via SMS to selected phone numbers, 
+6. If classified emergency, alerts are send via SMS to selected phone numbers, 
 7. On-demand SMS and IVR is enabled
 
+![Architecture] (https://github.com/avijitashe/aravali_codefundo/blob/master/Architecture%202018-10-11.jpg)
 
 ## What technologies are you using?
 We make use of Azure Functions for serverless architecture, Azure Storage solutions, newsapi's API for datamining, tweepy API for updates, way2sms API for SMS services, translator and transliteration API for alerts, analysis, and DSVM for machine learning.  C#, Python and R. 
@@ -38,7 +39,7 @@ We make use of Azure Functions for serverless architecture, Azure Storage soluti
 ## What dataset (s) are you using?
 1. IMD (https://data.gov.in/catalogs/ministry_department/ministry-earth-sciences)
 2. IMD (https://www.kaggle.com/rajanand/rainfall-in-india)
-4. http://digitalgateway.in/Mobile-Database 
+4. http://digitalgateway.in/Mobile-Database (curated)
 
 ## How users can get started with the project?
 To contribute clone the repo, prepare credentials for APIs, and submit updates. 
@@ -46,7 +47,7 @@ To contribute clone the repo, prepare credentials for APIs, and submit updates.
 Note: API policies are subject to change
 
 Future Works: 
-1. Learn trajectory of cyclones and floods from historical data. 
-2. Emergency calls without network authentication (SIM) coverage 
-3. Better NLP for IVRS alerts and assistance. 
+1. Learn trajectory of cyclones and floods from historical data
+2. Alerts to no SIM coverage  
+3. NLP for IVR
 
