@@ -4,7 +4,8 @@ ARAVALI makes predictions better and alerts more relevant. An Open Source System
 ARAVALI is based on (A)gg(R)egated (A)rri(V)al of (L)atent (I)nformation to:
 1. Improve predictions (in time and accuracy) by combining predictions from curated data (offline) and aggregated real-time public social media and sensor systems from IMD, CWC etc. 
 2. Monitor keywords from social media posts – update database (online)
-3. Disseminate relevant alerts via SMS and Phone IVR (NLP) assistance in regional languages to concerned demographics/territories
+3. Disseminate relevant alerts via SMS in regional languages to concerned demographics/territories
+4. On-demand SMS updates and Phone IVR (NLP) assistance
 
 Synopsis :
 
@@ -27,7 +28,8 @@ The front-end is a web application, while back-end does computing. The end-user 
 3. Data is analysed, cleaned and fused
 4. Posts, tweets, news are monitored online, databse is updated
 5. Messages are composed with updates, forecast, damage etc
-6. During an alert, alerts are send via SMS to selected phone numbers, IVR is enabled
+6. During an alert, alerts are send via SMS to selected phone numbers, 
+7. On-demand SMS and IVR is enabled
 
 
 ## What technologies are you using?
