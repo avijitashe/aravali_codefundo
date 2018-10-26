@@ -6,6 +6,11 @@ ARAVALI is based on (A)gg(R)egated (A)rri(V)al of (L)atent (I)nformation to:
 2. Monitor keywords from social media posts – update database (online)
 3. If emergency, disseminate curated alerts via SMS in regional languages to concerned demographics
 
+# UPDATE
+
+## What does WebApp do?
+ARAVALI now has a webapp front-end. It allows updating database and retraining models at regular intervals. It is written In Python and Flask and deployed using Docker Image or simply on a VM Server. To login to the WebApp in Azure VM browse to http://104.211.227.124:5000 Once you sign up and login, you can upload datasets in desired format and retrain the AI model. The backend uses a Random Forest classifier.
+
 
 Synopsis :
 
@@ -22,8 +27,6 @@ Finally, using feedback from the community via SMS in real-time can be used as s
 
 The front-end is a web application, while back-end does computing. The end-user interacts offline.
 
-## What does WebApp do?
-It allows updating database and retraining models at regular intervals. It is written In Python and Flask and deployed using Docker Image or simply on a VM Server.
 
 ## How does it work?
 1. Avaiable datasets from IMD and Unisys is stored
