@@ -22,9 +22,12 @@ Finally, using feedback from the community via SMS in real-time can be used as s
 
 The front-end is a web application, while back-end does computing. The end-user interacts offline.
 
+## What does WebApp do?
+It allows updating database and retraining models at regular intervals. It is written In Python and Flask and deployed using Docker Image or simply on a VM Server.
+
 ## How does it work?
-1. Avaiable datasets from IMD is stored
-2. Newsapi API collects data like casualties, inches of rain, days of rain, people evacuated, shelters, expenses etc.
+1. Avaiable datasets from IMD and Unisys is stored
+2. Newsapi & NyTimes API collects data like casualties, inches of rain, days of rain, people evacuated, shelters, expenses etc.
 3. Database is periodically fused, updated
 4. Tweets, feedbacks are monitored 
 5. Messages are composed with updates, forecast, damage etc
@@ -33,11 +36,12 @@ The front-end is a web application, while back-end does computing. The end-user 
 ![Architecture]  (https://github.com/avijitashe/aravali_codefundo/blob/master/Architecture%202018-10-11.jpg)
 
 ## What technologies are you using?
-We make use of Azure Functions for serverless architecture, Azure Storage solutions, newsapi's API for datamining, tweepy API for updates, way2sms API for SMS services, translator and transliteration API for alerts, analysis, and DSVM for machine learning.  C#, Python and R. 
+We make use of Azure Functions for serverless architecture, Azure Storage solutions, newsapi's and NYTimes API for datamining, tweepy API for updates, way2sms API for SMS services, translator and transliteration API for alerts, analysis, and DSVM for machine learning. Docker and Azure Container Registry for hosting application. C# and Python. 
 
 ## What dataset (s) are you using?
 1. IMD (https://data.gov.in/catalogs/ministry_department/ministry-earth-sciences)
 2. IMD (https://www.kaggle.com/rajanand/rainfall-in-india)
+3. Unisys http://weather.unisys.com/hurricanes/1972/north-indian
 4. http://digitalgateway.in/Mobile-Database (must be curated, currently using sample data)
 
 ## How users can get started with the project?
