@@ -33,7 +33,7 @@ It allows updating database and retraining models at regular intervals. It is wr
 5. Messages are composed with updates, forecast, damage etc
 6. If classified emergency, alerts are send via SMS to selected phone numbers
 
-![Architecture]  (https://github.com/avijitashe/aravali_codefundo/blob/master/Architecture%202018-10-11.jpg)
+![Architecture](https://github.com/avijitashe/aravali_codefundo/blob/master/ARAVALI_Current%20Architecture.jpg)
 
 ## What technologies are you using?
 We make use of Azure Functions for serverless architecture, Azure Storage solutions, newsapi's and NYTimes API for datamining, tweepy API for updates, way2sms API for SMS services, translator and transliteration API for alerts, analysis, and DSVM for machine learning. Docker and Azure Container Registry for hosting application. C# and Python. 
