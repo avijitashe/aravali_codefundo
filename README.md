@@ -8,9 +8,10 @@ ARAVALI is based on (A)gg(R)egated (A)rri(V)al of (L)atent (I)nformation to:
 
 # UPDATE
 
-## What does WebApp do?
 ARAVALI now has a webapp front-end. It allows updating database and retraining models at regular intervals. It is written In Python and Flask and deployed using Docker Image or simply on a VM Server. To login to the WebApp in Azure VM browse to http://104.211.227.124:5000 Once you sign up and login, you can upload datasets in desired format and retrain the AI model. The backend uses a Random Forest classifier.
 
+Previously
+-------------------------------------------
 
 Synopsis :
 
