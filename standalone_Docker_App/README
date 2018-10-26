@@ -1,0 +1,61 @@
+---
+
+Run the ML program as a stand alone:
+
+1. gather all the python dependencies for the project.
+
+2. If it is a ubuntu machine, first install docker client (DON'T SKIP)
+   sudo apt-get update
+   sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+   sudo apt-get update
+   sudo apt-get install docker-ce -y
+   TEST: sudo docker run hello-world
+
+3. Once the above step completes, this indictaes that your installation is complete.
+   (i) Create a fresh new folder
+   (ii) Keep all your ML code in this new folder
+   (iii) Create a new file with name "Dockerfile"
+   (iv) Paste the below content by replacing the <PROVIDE THE DEPENDENCY TO INSTALL > with proper library to install.
+
+from goodwaygroup/ubuntu1604-python36:latest
+
+RUN apt-get update
+
+RUN <PROVIDE THE DEPENDENCY TO INSTALL >
+
+RUN pip install azure
+
+COPY . /home/mlapp/
+
+RUN chmod 777 /home/mlapp/entrypoint.sh
+
+ENTRYPOINT ["python"]
+
+CMD ["/home/mlapp/machine_learning_app.py"]
+
+  (v) In the same directory run the following command to build the docker image.
+      docker build -t mlapp .
+  (vi) If the above steps succeds it means your image is created properly.
+  (vii) verify the presence of your docker image by running the following command.
+        docker images
+
+4. Now follow the below steps to push the image to the azure container registry.
+
+=============== AZURE CONTAINER REGISTRY FOR DOCKER IMAGES ================
+
+login server: sahoa.azurecr.io
+username: sahoa
+passwd: xSuxOS6OcerxCTKB24E/KKNWGoFcoOGa
+
+1. docker login --username sahoa --password xSuxOS6OcerxCTKB24E/KKNWGoFcoOGa sahoa.azurecr.io
+2. docker tag mlapp sahoa.azurecr.io/mlapp:v1
+3. docker push sahoa.azurecr.io/mlapp:v1
+
+5. Once you complete the above step your docker image is already in the repository.
+   To download it 
+   docker login --username sahoa --password xSuxOS6OcerxCTKB24E/KKNWGoFcoOGa sahoa.azurecr.io
+   docker pull sahoa.azurecr.io/mlapp:v1
+
+6. That's it. You have successfully completed the exercise.
