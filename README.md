@@ -4,7 +4,7 @@ ARAVALI makes predictions better and alerts more relevant. An Open Source System
 ARAVALI is based on (A)gg(R)egated (A)rri(V)al of (L)atent (I)nformation to:
 1. Improve predictions (in time and accuracy) by combining predictions from curated data (offline) and aggregated real-time public social media and sensor systems from IMD, CWC etc. 
 2. Monitor keywords from social media posts – update database (online)
-3. Disseminate relevant alerts via SMS (on-demand/IVR) in regional languages to concerned demographics
+3. If emergency, disseminate curated alerts via SMS in regional languages to concerned demographics
 
 
 Synopsis :
@@ -18,7 +18,7 @@ Secondly, despite the penetration of internet, traditional SMS (no internet) ale
 
 The real-time measurements from satellite, sensors and gauges always offer greater weightage. They are complementary.
 
-Finally, using feedback from the community via helpline/SMS in real-time can be used as surrogate sensors to gather additional data. For ex: Pings on rising water levels in streets or mud flow 
+Finally, using feedback from the community via SMS in real-time can be used as surrogate sensors to gather additional data. For ex: Pings on rising water levels in streets or mud flow 
 
 The front-end is a web application, while back-end does computing. The end-user interacts offline.
 
@@ -28,10 +28,9 @@ The front-end is a web application, while back-end does computing. The end-user 
 3. Database is periodically fused, updated
 4. Tweets, feedbacks are monitored 
 5. Messages are composed with updates, forecast, damage etc
-6. If classified emergency, alerts are send via SMS to selected phone numbers, 
-7. On-demand SMS and IVR is enabled
+6. If classified emergency, alerts are send via SMS to selected phone numbers
 
-![Architecture](https://github.com/avijitashe/aravali_codefundo/blob/master/Architecture%202018-10-11.jpg)
+![Architecture]  (https://github.com/avijitashe/aravali_codefundo/blob/master/Architecture%202018-10-11.jpg)
 
 ## What technologies are you using?
 We make use of Azure Functions for serverless architecture, Azure Storage solutions, newsapi's API for datamining, tweepy API for updates, way2sms API for SMS services, translator and transliteration API for alerts, analysis, and DSVM for machine learning.  C#, Python and R. 
@@ -39,7 +38,7 @@ We make use of Azure Functions for serverless architecture, Azure Storage soluti
 ## What dataset (s) are you using?
 1. IMD (https://data.gov.in/catalogs/ministry_department/ministry-earth-sciences)
 2. IMD (https://www.kaggle.com/rajanand/rainfall-in-india)
-4. http://digitalgateway.in/Mobile-Database (curated)
+4. http://digitalgateway.in/Mobile-Database (must be curated, currently using sample data)
 
 ## How users can get started with the project?
 To contribute clone the repo, prepare credentials for APIs, and submit updates. 
@@ -48,6 +47,7 @@ Note: API policies are subject to change
 
 Future Works: 
 1. Learn trajectory of cyclones and floods from historical data
-2. Alerts to no SIM coverage  
-3. NLP for IVR
+2. No SIM coverage reachability
+3. NLP for IVR 
+4. On demand Status Update by SMS and IVR
 
