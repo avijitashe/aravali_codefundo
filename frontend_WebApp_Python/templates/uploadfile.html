@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+	    <form action = "/uploader" method=post enctype=multipart/form-data>
+	      <div class="row">
+	      	<div class="col-sm-4">
+	      		<label><b>Upload IMDRainFall</b></label>
+	      	</div>
+	      	<div class="col-sm-4">
+	      		<input type=file name=file>
+	      	</div>
+	      	<div class="col-sm-4">
+	      		<input type=submit value="Upload">
+	      	</div>
+	      </div>
+	    </form>
+	</div>
+	<div class="content-section">
+	    <form action = "/uploader" method=post enctype=multipart/form-data>
+	      <div class="row">
+	      	<div class="col-sm-4">
+	      		<label><b>Upload IMDCyclone</b></label>
+	      	</div>
+	      	<div class="col-sm-4">
+	      		<input type=file name=file>
+	      	</div>
+	      	<div class="col-sm-4">
+	      		<input type=submit value="Upload">
+	      	</div>
+	      </div>
+	    </form>
+	</div>
+    <div class="content-section">
+	    <form action = "/uploader" method=post enctype=multipart/form-data>
+	      <div class="row">
+	      	<div class="col-sm-4">
+	      		<label><b>Upload Unisys</b></label>
+	      	</div>
+	      	<div class="col-sm-4">
+	      		<input type=file name=file>
+	      	</div>
+	      	<div class="col-sm-4">
+	      		<input type=submit value="Upload">
+	      	</div>
+	      </div>
+	    </form>
+	</div>
+	<div class="content-section">
+	    <form action = "/uploader" method=post enctype=multipart/form-data>
+	      <div class="row">
+	      	<div class="col-sm-4">
+	      		<label><b>Upload NYTimes</b></label>
+	      	</div>
+	      	<div class="col-sm-4">
+	      		<input type=file name=file>
+	      	</div>
+	      	<div class="col-sm-4">
+	      		<input type=submit value="Upload">
+	      	</div>
+	      </div>
+	    </form>
+	</div>
+	<div class="content-section">
+		<form action = "/trainmodel" method=post enctype=multipart/form-data>
+	      <div class="row">
+	      	<div class="col-sm-12">
+	      		<input type=submit value="Train model">
+	      	</div>
+	      </div>
+	    </form>
+	</div>
+{% endblock content %}
