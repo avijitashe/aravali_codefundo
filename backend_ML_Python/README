@@ -1,0 +1,39 @@
+ARAVALI: This makes predictions better and alerts more relevant.
+
+This is the back-end machine learning code. It is written in Python 2.7 (and also tested with 3.7) on Ubuntu 16. It has also been tested with Native and Anaconda 2. It does data aggregation from various sources e.g. Unisys, NYTimes, IMD which are procured earlier using their APIs. 
+
+To run the code on a standalone machine, follow:
+
+--------------------------------------------
+Environment
+--------------------------------------------
+Python 2.7.12 (also tested on Python 3.7 with corresponding libraries)
+Ubuntu 16
+
+
+--------------------------------------------
+First Install (Dependecies)
+--------------------------------------------
+sudo apt-get install python-pip
+pip install pandas
+pip install xlrd (for ImportError: Install xlrd >= 0.9.0 for Excel support)
+pip install scikit-learn
+
+
+Configurations Check: Run: ~$ pip list 
+--------------------------------------------
+adium-theme-ubuntu (0.3.4)
+numpy (1.15.3)
+pandas (0.23.4)
+pip (8.1.1)
+python-dateutil (2.7.3)
+pytz (2018.6)
+scikit-learn (0.20.0)
+scipy (1.1.0)
+setuptools (20.7.0)
+six (1.11.0)
+unity-lens-photos (1.0)
+wheel (0.29.0)
+xlrd (1.1.0)
+
+
