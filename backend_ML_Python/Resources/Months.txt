@@ -1,0 +1,14 @@
+Months Short
+January J
+February F
+March M
+April A
+May M
+June J
+July J
+August A
+September S
+October O
+November N
+December D
+
